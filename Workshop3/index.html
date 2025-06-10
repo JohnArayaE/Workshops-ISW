@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias Última Hora</title>
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <style>
+    .barra-superior {
+      background-color: #2a003f;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .barra-superior img {
+      height: 80px;
+    }
+
+    .barra-superior h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .barra-superior button {
+      margin-left: 10px;
+      padding: 10px 15px;
+      background-color: white;
+      color: #2a003f;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .barra-superior button:hover {
+      background-color: #ddd;
+    }
+
+    .seccion-noticia {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    .categoria {
+      background: linear-gradient(90deg, #6a0dad, #8e44ad);
+      color: white;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-left: 4px solid #ff007f;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .subcategoria {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    .noticia img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .noticia h2 {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .noticia p {
+      color: #333;
+    }
+
+    .btn-vermas {
+      margin-top: 10px;
+    }
+
+    .otras-noticias {
+      margin-top: 60px;
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #2a003f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-superior">
+    <img src="img/logo.png" alt="Logo">
+    <h1>NOTICIAS ULTIMA HORA</h1>
+    <div>
+      <button>Inicio</button>
+      <button>Deportes</button>
+      <button>Internacionales</button>
+      <button>Contacto</button>
+    </div>
+  </div>
+
+  <!-- Sección de Noticia Principal -->
+  <div class="seccion-noticia container">
+    <div class="categoria">
+      TECHNOLOGY
+      <div class="subcategoria">ARTIFICIAL INTELLIGENCE | SOCIAL MEDIA</div>
+    </div>
+
+    <div class="noticia mt-4">
+      <img src="img/noticia.webp" alt="Apple WWDC25">
+      <h2>Apple rediseña su software mientras enfrenta desafíos con IA y conflictos comerciales</h2>
+      <p>Tras un inicio difícil en la carrera tecnológica por la inteligencia artificial, Apple intenta retomar fuerza este lunes durante la conferencia de desarrolladores WWDC25. Los cambios presentados se enfocan en avances incrementales y mejoras visuales en sus sistemas.</p>
+      <a href="index2.html" class="btn btn-primary btn-vermas">Leer más</a>
+    </div>
+
+    <!-- Otras Noticias -->
+    <div class="otras-noticias row">
+      <div class="col-md-4 mt-4">
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">NASA descubre posible vida microbiana en luna de Júpiter</h5>
+            <p class="card-text">Un análisis reciente detectó elementos compatibles con organismos vivos bajo el hielo de Europa.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Netflix lanza plan global sin publicidad en nuevos mercados</h5>
+            <p class="card-text">La plataforma apunta a recuperar usuarios ofreciendo contenido premium sin anuncios.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-4">
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">Intel presenta chip optimizado para inteligencia artificial</h5>
+            <p class="card-text">El nuevo procesador busca competir con NVIDIA en el campo de modelos generativos.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 News Globe. Todos los derechos reservados.
+  </div>
+
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

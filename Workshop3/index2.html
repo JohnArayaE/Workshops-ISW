@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalle de la Noticia - Noticias Última Hora</title>
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <style>
+    .barra-superior {
+      background-color: #2a003f;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .barra-superior img {
+      height: 80px;
+    }
+
+    .barra-superior h1 {
+      margin: 0;
+      font-size: 2rem;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .barra-superior button {
+      margin-left: 10px;
+      padding: 10px 15px;
+      background-color: white;
+      color: #2a003f;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .barra-superior button:hover {
+      background-color: #ddd;
+    }
+
+    .contenido-noticia {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    .contenido-noticia img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .contenido-noticia h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .contenido-noticia p {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .btn-volver {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-superior">
+    <img src="img/logo.png" alt="Logo">
+    <h1>NOTICIAS ULTIMA HORA</h1>
+    <div>
+      <button onclick="location.href='index.html'">Inicio</button>
+      <button>Deportes</button>
+      <button>Internacionales</button>
+      <button>Contacto</button>
+    </div>
+  </div>
+
+  <div class="contenido-noticia container">
+    <img src="img/noticia.webp" alt="Apple WWDC25">
+    <h2>Apple rediseña su software mientras enfrenta desafíos con IA y conflictos comerciales</h2>
+    <p>
+      Durante la conferencia de desarrolladores WWDC25 celebrada este lunes, Apple anunció un rediseño completo de su software, en medio de un contexto complejo marcado por el avance de la inteligencia artificial y desafíos comerciales como la guerra tecnológica con China y políticas comerciales del expresidente Trump.
+    </p>
+    <p>
+      La empresa busca recuperar terreno frente a sus competidores, presentando cambios visuales en iOS, mejoras en privacidad y nuevas funcionalidades centradas en el uso de IA generativa, asistentes más inteligentes, y una mayor integración entre sus dispositivos.
+    </p>
+    <p>
+      Si bien los anuncios no revolucionaron la industria, Apple dejó claro que busca avanzar paso a paso, apostando por mejoras consistentes que consoliden su ecosistema y preparen el terreno para futuras actualizaciones más disruptivas.
+    </p>
+
+    <a href="index.html" class="btn btn-secondary btn-volver">← Volver</a>
+  </div>
+
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
